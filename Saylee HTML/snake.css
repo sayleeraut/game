@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#game-board {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #9BEC00;
+}
+
+.food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:#FDFF00;
+}

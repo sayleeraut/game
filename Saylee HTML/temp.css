@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color:#354a2f; /* Light beige */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-heading h1 {
+    color: #f5f5d5; /* Dark green */
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.player-inputs {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.player-inputs input {
+    padding: 15px; /* Increased padding for bigger input boxes */
+    width: 45%; /* Increased width to make inputs a bit bigger */
+    border-radius: 5px;
+    border: 2px solid #5c724a; /* Darker green */
+    font-size: 1.2em; /* Increased font size */
+    background-color: #f5f5d5; /* Light beige input background */
+    color: #354a2f; /* Dark green text */
+}
+
+#start-game {
+    background-color: #5c724a; /* Darker green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option {
+    background: #c7b793; /* Light brown */
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #354a2f; /* Dark green */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+
+.button-option:hover {
+    transform: translateY(-10px);
+    background-color: #a3b68a; /* Greenish hover background */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#restart, #new-game {
+    background-color: #5c724a; /* Darker green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup {
+    background: linear-gradient(135deg, #5c724a, #354a2f); /* Green gradient */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+
+#message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.popup.hide, .wrapper.hide, #restart.hide {
+    display: none;
+}
